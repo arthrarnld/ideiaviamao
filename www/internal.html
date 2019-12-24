@@ -10,6 +10,16 @@
 			html{scroll-behavior:smooth;}
 			.box-hr{opacity:30%;width:10%;height:1px;margin:20px auto;}
 		</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const bb = document.getElementById('burgerButton');
+				const mm = document.getElementById('mainMenu');
+				bb.addEventListener('click', () => {
+					bb.classList.toggle('is-active');
+					mm.classList.toggle('is-active');
+				});
+			});
+		</script>
 		<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"></script>
 	</head>
 	<body class="has-navbar-fixed-top">
@@ -22,7 +32,7 @@
 							<img src="img/logo.svg"></img>
 						</figure>
 					</a>
-					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="mainMenu">
+					<a id="burgerButton" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
@@ -30,7 +40,7 @@
 				</div>
 				<div id="mainMenu" class="navbar-menu">
 					<div class="navbar-start">
-						<a class="navbar-item" href="#sec-sobre">Sobre Nós</a>
+						<a class="navbar-item" href="#sec-sobre">Sobre nós</a>
 						<a class="navbar-item" href="#sec-matriculas">Matrículas</a>
 						<a class="navbar-item" href="#sec-participe">Participe</a>
 						<a class="navbar-item" href="#sec-contato">Contato</a>
