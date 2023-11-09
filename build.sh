@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sass --no-source-map ./bulma/style.scss ./www/css/bulma.css
+sass --no-source-map ./bulma/style.scss ./docs/css/bulma.css
